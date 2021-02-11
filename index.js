@@ -33,7 +33,6 @@ function inspireCommand(msg){
   }
 }
 
-
 client.login(process.env.token);
 client.on("ready", readyDiscord);
 client.on("message", inspireCommand)
@@ -43,9 +42,3 @@ function readyDiscord(){
     botSpamChannel = client.channels.cache.get(botSpamChannelID);
     botSpamChannel.send("I'm online :D");
 }
-
-setInterval(()=>{
-  getInspirobotImageURL((url)=>{
-    botSpamChannel.send(url);
-  });
-}, 60000);
