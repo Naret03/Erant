@@ -34,8 +34,7 @@ function inspireCommand(msg){
 }
 
 
-//client.login(process.env.token);
-client.login("Nzk4MjY0NzgzNjY4NTEwNzcw.X_ygAw.WbEF1bqaFzlWTPzQIUawySD9F38")
+client.login(process.env.token);
 client.on("ready", readyDiscord);
 client.on("message", inspireCommand)
 
