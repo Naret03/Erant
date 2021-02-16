@@ -7,7 +7,7 @@ require('dotenv').config();
 const client = new Discord.Client();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
-let prefix = "$";
+let prefix = ">";
 const botSpamChannelID = "765162163181977610";
 let botSpamChannel = null;
 client.commands = [];
